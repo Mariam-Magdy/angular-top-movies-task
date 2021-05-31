@@ -1,4 +1,4 @@
-# Top Movies - Etisalat angular task
+# Top Movies - angular task
 
 Top movies angular task wich show the cards of current top 10 movies useing angular version 11.0.2.
 
