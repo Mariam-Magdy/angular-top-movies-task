@@ -2,8 +2,11 @@
 
 Top movies angular task wich show the cards of current top 10 movies useing angular version 11.0.2.
 
-## Development server
+## Demo
 
+You can see the demo of this app from [here](https://mariam-magdy.github.io/angular-top-movies-task/)
+
+## Development server
 
 - Please install `yarn` at your global level useing with `npm install --global yarn`.
 
