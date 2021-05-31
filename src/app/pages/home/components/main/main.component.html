@@ -1,0 +1,31 @@
+<div class="container mt-5">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <div *ngFor="let movie of moviesService.movies" class="col">
+      <div class="card">
+        <img [src]="movie.image" class="card-img-top" [alt]="movie.title" />
+        <div class="card-body">
+          <h5 class="card-title">{{ movie.title }}</h5>
+          <p class="card-text">
+            {{ movie.info }}
+          </p>
+          <button
+            type="button"
+            *ngIf="!movie.isFavorite"
+            (click)="movie.isFavorite = true"
+            class="btn btn-outline-danger"
+          >
+            Add to favorite
+          </button>
+          <button
+            type="button"
+            *ngIf="movie.isFavorite"
+            (click)="movie.isFavorite = false"
+            class="btn btn-danger"
+          >
+            remove from favorite
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
